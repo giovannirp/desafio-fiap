@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900");
+@font-face {
+  font-family: 'gotham-htf-bold';
+  src: url("/assets/Fonts/Gotham/gotham-htf-bold.woff2") format("woff2"), url("/assets/Fonts/Gotham/gotham-htf-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'gotham-htf-book';
+  src: url("/assets/Fonts/Gotham/gotham-htf-book.woff2") format("woff2"), url("/assets/Fonts/Gotham/gotham-htf-book.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'gotham-htf-light';
+  src: url("/assets/Fonts/Gotham/gotham-htf-light.woff2") format("woff2"), url("/assets/Fonts/Gotham/gotham-htf-light.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'gotham-htf-medium';
+  src: url("/assets/Fonts/Gotham/gotham-htf-medium.woff2") format("woff2"), url("/assets/Fonts/Gotham/gotham-htf-medium.woff") format("woff");
+}
+
+body {
+  color: #fff;
+  padding-top: 50px;
+  background-image: url("../img/bg-fiap.png");
+  background-color: #2d2e2f;
+  background-size: cover;
+}
+
+header {
+  text-align: center;
+  width: 100%;
+  background-color: #2d2e2f;
+  position: fixed;
+  top: 0;
+  z-index: 999999;
+}
+
+header h1 {
+  margin: 20px 140px 20px 20px;
+}
+
+header .content-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+header .content-header ul li {
+  display: inline-block;
+  position: relative;
+}
+
+header .content-header ul a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 15px 5px;
+  color: #9aadb8;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'gotham-htf-book';
+}
+
+header .content-header ul a:hover:after {
+  width: 40px;
+}
+
+header .content-header ul a:after {
+  background: #ed145b;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 27px;
+  position: absolute;
+  top: 47px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  width: 10px;
+}
+
+header .content-header .btn-login {
+  width: 151px;
+  height: 35px;
+  background: #ed145b;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 13px;
+  font-family: 'gotham-htf-medium';
+  color: #000000;
+  text-transform: uppercase;
+  margin-top: 17px;
+  margin-left: 70px;
+  -webkit-transition: background-color .2s ease,-webkit-box-shadow .2s ease;
+  transition: background-color .2s ease,-webkit-box-shadow .2s ease;
+  transition: box-shadow .2s ease,background-color .2s ease;
+  transition: box-shadow .2s ease,background-color .2s ease,-webkit-box-shadow .2s ease;
+}
+
+header .content-header .btn-login:hover {
+  background-color: #ed145b;
+  -webkit-box-shadow: 0 0 20px #ed145b;
+          box-shadow: 0 0 20px #ed145b;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.container .session-init {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 70px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .session-init .arrow-conceito {
+  margin-top: 228px;
+  margin-bottom: 290px;
+}
+
+.container #conceito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container #conceito h1 {
+  font-size: 36px;
+  line-height: 52px;
+  font-family: 'gotham-htf-light';
+  text-align: center;
+  color: #cee7f5;
+  margin-bottom: 70px;
+}
+
+.container #conceito h1 strong {
+  font-family: 'gotham-htf-bold';
+}
+
+.container #conceito p {
+  font-size: 15px;
+  font-family: 'gotham-htf-book';
+  color: #cee7f5;
+  text-align: center;
+  line-height: 32px;
+}
+
+.container #conceito .join-us {
+  margin-top: 160px;
+  margin-bottom: 180px;
+}
+
+.container #fotos {
+  position: relative;
+  margin-bottom: 220px;
+}
+
+.container #fotos h1 {
+  text-align: center;
+  font-family: 'gotham-htf-medium';
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #91a3ad;
+  margin-bottom: 110px;
+}
+
+.container #fotos h1:after {
+  background: #ed145b;
+  content: "";
+  display: block;
+  height: 6px;
+  left: 48%;
+  position: absolute;
+  top: 47px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  width: 34px;
+}
+
+.container #fotos div {
+  margin-top: 40px;
+}
+/*# sourceMappingURL=styles.css.map */
