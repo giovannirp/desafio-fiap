@@ -151,7 +151,7 @@ header {
     position: fixed;
     top: 0;
     z-index: 999999;
-    background-image: url(../img/gradiente.jpg);
+    background-image: url('../img/gradiente.jpg');
     background-size: cover;
 
 
@@ -564,7 +564,7 @@ header {
                         width: 100%;
                     }
 
-                    @media (max-width: 350px) {
+                    @media (max-width: 380px) {
                         max-width: 288px;
                     }
                 }
@@ -608,7 +608,7 @@ header {
                             width: 100%;
                         }
 
-                        @media (max-width: 350px) {
+                        @media (max-width: 380px) {
                             max-width: 288px;
                         }
                     }
@@ -672,7 +672,7 @@ header {
                         padding-left: 10px;
                         color: #ffffff;
 
-                        @media (max-width: 350px) {
+                        @media (max-width: 380px) {
                             max-width: 38px;
                         }
                     }
@@ -744,7 +744,7 @@ header {
                         width: 340px;
                     }
 
-                    @media (max-width: 350px) {
+                    @media (max-width: 380px) {
                         max-width: 288px;
                     }
                 }
@@ -788,7 +788,7 @@ header {
                         width: 100%;
                     }
 
-                    @media (max-width: 350px) {
+                    @media (max-width: 380px) {
                         max-width: 288px;
                     }
                 }
@@ -821,7 +821,7 @@ header {
                     margin-top: 17px;
                     transition: box-shadow .2s ease, background-color .2s ease;
 
-                    @media (max-width: 350px) {
+                    @media (max-width: 380px) {
                         width: 120px;
                     }
 
@@ -849,10 +849,10 @@ header {
                     margin-left: 28px;
                     transition: box-shadow .2s ease, background-color .2s ease;
 
-                    @media (max-width: 350px) {
+                    @media (max-width: 380px) {
                         width: 120px;
                     }
-                    
+
                     &:hover {
                         background-color: #ed145b;
                         box-shadow: 0 0 20px #ed145b;

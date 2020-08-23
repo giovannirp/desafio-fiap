@@ -41,7 +41,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 999999;
-  background-image: url(../img/gradiente.jpg);
+  background-image: url("../img/gradiente.jpg");
   background-size: cover;
 }
 
@@ -637,7 +637,7 @@ header .content-header .btn-login:hover {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 380px) {
   .container #contato .formulario .form-input input[type=text],
   .container #contato .formulario .form-input input[type=email] {
     max-width: 288px;
@@ -693,7 +693,7 @@ header .content-header .btn-login:hover {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 380px) {
   .container #contato .formulario .parser-input .form-input-cidade input[type=text] {
     max-width: 288px;
   }
@@ -756,7 +756,7 @@ header .content-header .btn-login:hover {
   color: #ffffff;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 380px) {
   .container #contato .formulario .parser-input .form-input-ddd input[type=text] {
     max-width: 38px;
   }
@@ -840,7 +840,7 @@ header .content-header .btn-login:hover {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 380px) {
   .container #contato .formulario .form-input-titulo input[type=text] {
     max-width: 288px;
   }
@@ -897,7 +897,7 @@ header .content-header .btn-login:hover {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 380px) {
   .container #contato .formulario .form-input-mensgem textarea {
     max-width: 288px;
   }
@@ -951,7 +951,7 @@ header .content-header .btn-login:hover {
   transition: box-shadow .2s ease, background-color .2s ease, -webkit-box-shadow .2s ease;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 380px) {
   .container #contato .formulario .form-buttons .btn-limpar {
     width: 120px;
   }
@@ -989,7 +989,7 @@ header .content-header .btn-login:hover {
   transition: box-shadow .2s ease, background-color .2s ease, -webkit-box-shadow .2s ease;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 380px) {
   .container #contato .formulario .form-buttons .btn-enviar {
     width: 120px;
   }
