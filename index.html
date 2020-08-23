@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FIAP:: Front-End</title>
+        <title>FIAP - Front-End</title>
         <link rel="stylesheet" href="assets/css/reset.css" />
         <link rel="stylesheet" href="assets/css/styles.css" />
         <link rel="stylesheet" href="assets/css/slideshow/slideshow.css" />
@@ -26,6 +26,24 @@
                     login
                 </a>
             </div>
+
+            <!--Inicio hedader para tablet e mobile-->
+            <div class="hambuguer">
+                <div class="overlay">
+                    <img src="assets/img/logo-fiap.png" alt="Logo Fiap" />
+
+                    <label for="toggle"></label>
+                </div>
+
+                <input type="checkbox" id="toggle" name="toggle">
+                <div class="verticalNav">
+                    <a href="#conceito">Conceito</a>
+                    <a href="#fotos">Fotos</a>
+                    <a href="#noticias">Notícias</a>
+                    <a href="#contato">Fale Conosco</a>
+                </div>
+            </div>
+            <!--Fim hedader para tablet e mobile-->
         </header>
         <div class="container">
             <section class="session-init">
@@ -35,140 +53,249 @@
                         <img src="assets/img/arrow-section.png" />
                     </a>
                 </div>
-                <section id="conceito">
+                <article id="conceito">
                     <h1>A <strong>FIAP</strong> É O CENTRO DE<br />
                         EXCELÊNCIA EM TECNOLOGIA<br />
                         MAIS RESPEITADO DO PAÍS.</h1>
                     <p>UMA HISTÓRIA QUE VEM SENDO CONSTRUÍDA DIA APÓS DIA,
                         ESTIMULANDO MENTES<br />
-                        A VIVENCIAREM A INOVAÇÃO E O EMPREENDEDORISMO. PORQUE A
+                        A VIVENCIAREM A INOVAÇÃO E O EMPREENDEDORISMO.
+                        PORQUE A
                         FIAP ACREDITA<br />
                         NO PODER TRANSFORMADOR DA TECNOLOGIA.</p>
                     <div class="join-us">
                         <img src="assets/img/join-us.png" />
                     </div>
-                </section>
+                </article>
+            </section>
 
-                <section id="fotos">
-                    <h1>Fotos</h1>
-                    <div>
-                        <!--Inicio do carrocel -->
-                        <div class="slideshow-container">
-                            <div class="mySlides fade">
-                                <div class="numbertext">1 / 10</div>
-                                <img
-                                    src="assets/img/Fotos/a-luta-da-tecnologia.jpg"
-                                    style="width:100%">
-                            </div>
-
-                            <div class="mySlides fade">
-                                <div class="numbertext">2 / 10</div>
-                                <img
-                                    src="assets/img/Fotos/coworking-paulista.jpg"
-                                    style="width:100%">
-                            </div>
-                            <div class="mySlides fade">
-                                <div class="numbertext">3 / 10</div>
-                                <img
-                                    src="assets/img/Fotos/corrida-de-drones.jpg"
-                                    style="width:100%">
-                            </div>
-                            <div class="mySlides fade">
-                                <div class="numbertext">4 / 10</div>
-                                <img src="assets/img/Fotos/drone-em-acao.jpg"
-                                    style="width:100%">
-                            </div>
-                            <div class="mySlides fade">
-                                <div class="numbertext">5 / 10</div>
-                                <img src="assets/img/Fotos/game-dev-lab.jpg"
-                                    style="width:100%">
-                            </div>
-                            <div class="mySlides fade">
-                                <div class="numbertext">6 / 10</div>
-                                <img src="assets/img/Fotos/impressora-laser.jpg"
-                                    style="width:100%">
-                            </div>
-                            <div class="mySlides fade">
-                                <div class="numbertext">7 / 10</div>
-                                <img
-                                    src="assets/img/Fotos/mais-tecnologia-na-pista.jpg"
-                                    style="width:100%">
-                            </div>
-                            <div class="mySlides fade">
-                                <div class="numbertext">8 / 10</div>
-                                <img
-                                    src="assets/img/Fotos/que-venca-a-tecnologia.jpg"
-                                    style="width:100%">
-                            </div>
-                            <div class="mySlides fade">
-                                <div class="numbertext">9 / 10</div>
-                                <img src="assets/img/Fotos/sala-de-aula.jpg"
-                                    style="width:100%">
-                            </div>
-                            <div class="mySlides fade">
-                                <div class="numbertext">10 / 10</div>
-                                <img src="assets/img/Fotos/robos-em-combate.jpg"
-                                    style="width:100%">
-                            </div>
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <section id="fotos">
+                <h1>Fotos</h1>
+                <div>
+                    <!--Inicio do carrocel -->
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 10</div>
+                            <img
+                                src="assets/img/Fotos/a-luta-da-tecnologia.jpg"
+                                style="width:100%">
                         </div>
-                        <!--Fim do carrocel -->
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 10</div>
+                            <img
+                                src="assets/img/Fotos/coworking-paulista.jpg"
+                                style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 10</div>
+                            <img
+                                src="assets/img/Fotos/corrida-de-drones.jpg"
+                                style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 10</div>
+                            <img src="assets/img/Fotos/drone-em-acao.jpg"
+                                style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">5 / 10</div>
+                            <img src="assets/img/Fotos/game-dev-lab.jpg"
+                                style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">6 / 10</div>
+                            <img src="assets/img/Fotos/impressora-laser.jpg"
+                                style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">7 / 10</div>
+                            <img
+                                src="assets/img/Fotos/mais-tecnologia-na-pista.jpg"
+                                style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">8 / 10</div>
+                            <img
+                                src="assets/img/Fotos/que-venca-a-tecnologia.jpg"
+                                style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">9 / 10</div>
+                            <img src="assets/img/Fotos/sala-de-aula.jpg"
+                                style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">10 / 10</div>
+                            <img src="assets/img/Fotos/robos-em-combate.jpg"
+                                style="width:100%">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     </div>
-                </section>
+                    <!--Fim do carrocel -->
+                </div>
+            </section>
 
-                <section id="noticias">
-                    <h1>
-                        <img src="assets/img/icon-title.png" />
-                        <span>
-                            Notícias
-                        </span>
-                    </h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Porro nobis nostrum error tempora natus quo ad soluta
-                        nemo
-                        ex nesciunt consequuntur qui debitis sunt fugit,
-                        adipisci
-                        quasi dicta voluptas! Recusandae.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Porro nobis nostrum error tempora natus quo ad soluta
-                        nemo
-                        ex nesciunt consequuntur qui debitis sunt fugit,
-                        adipisci
-                        quasi dicta voluptas! Recusandae.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Porro nobis nostrum error tempora natus quo ad soluta
-                        nemo
-                        ex nesciunt consequuntur qui debitis sunt fugit,
-                        adipisci
-                        quasi dicta voluptas! Recusandae.</p>
-                </section>
+            <section id="noticias">
+                <h1>
+                    <img src="assets/img/icon-title.png" />
+                    <span>
+                        Notícias
+                    </span>
+                </h1>
+                <article class="conteiner-noticias">
+                    <figure>
+                        <img src="assets/img/noticias/professor.png"
+                            alt="Preparação">
+                        <figcaption>PROFESSOR CONQUISTa
+                            CERTIFICAÇÃO DE SEGURANÇA
+                            CIBERNÉTICA COM RELEVÂNCIA
+                            MUNDIAL</figcaption>
+                        <span>13 de julho de 2018</span>
+                        <small>&nbsp;</small>
+                        <p>
+                            O professor de MBA da FIAP, Ricardo Giorgi,
+                            conquistou mais um certificado: o SANS – GIAC
+                            Certification – uma das mais relevantes
+                            certificações em cibersegurança do mundo. As
+                            Certificações GIAC fornecem conhecimento e
+                            habilidades atuais de segurança cibernética, que
+                            estão disponíveis para clientes industriais,
+                            governamentais e militares em todo o…
+                        </p>
+                        <a href="#" class="leia-mais">
+                            <div class="icon-leia-mais"></div>
+                            <img src="assets/img/leia-mais.png" alt="Icone
+                                Leia Mais" />
+                        </a>
+                    </figure>
+                    <figure>
+                        <img src="assets/img/noticias/edicao.png"
+                            alt="Edição">
+                        <figcaption>1ª EDIÇÃO DO STARTUP ONE
+                            MBA FIAP 2018</figcaption>
+                        <span>13 de julho de 2018</span>
+                        <small>&nbsp;</small>
+                        <p>
+                            Foram 270 startups, 30 mentores, 1500 horas de
+                            mentoria e 1 ano de trabalho dos alunos de MBA
+                            da FIAP. Todo o processo finalizou em uma
+                            cerimônia realizada no Museu de Arte de Moderna
+                            (MAM), em 28 de julho, onde os 10 melhores
+                            projetos se apresentaram em pitches de… </p>
+                        <a href="#" class="leia-mais">
+                            <div class="icon-leia-mais"></div>
+                            <img src="assets/img/leia-mais.png" alt="Icone
+                                Leia Mais" />
+                        </a>
+                    </figure>
+                    <figure>
+                        <img src="assets/img/noticias/diretor.png"
+                            alt="Diretor">
+                        <figcaption>PROFESSOR CONQUISTa
+                            CERTIFICAÇÃO DE SEGURANÇA
+                            CIBERNÉTICA COM RELEVÂNCIA
+                            MUNDIAL</figcaption>
+                        <span>13 de julho de 2018</span>
+                        <small>&nbsp;</small>
+                        <p>
+                            Em 8 de agosto, Eduardo Endo – diretor acadêmico
+                            da FIAP – participou do FINTOUCH 2018 como
+                            mediador do Painel “Fintechs Trazendo Impacto
+                            Social”, com Fernanda Ribeiro – do Conta Black –
+                            e Natália Alexandria – do BLU365. O objetivo do
+                            Fintouch é que todas as Fintechs possam se…
+                        </p>
+                        <a href="#" class="leia-mais">
+                            <div class="icon-leia-mais"></div>
+                            <img src="assets/img/leia-mais.png" alt="Icone
+                                Leia Mais" />
+                        </a>
+                    </figure>
+                </article>
+            </section>
 
-                <section id="contato">
-                    <h1>§ Contato</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Porro nobis nostrum error tempora natus quo ad soluta
-                        nemo
-                        ex nesciunt consequuntur qui debitis sunt fugit,
-                        adipisci
-                        quasi dicta voluptas! Recusandae.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Porro nobis nostrum error tempora natus quo ad soluta
-                        nemo
-                        ex nesciunt consequuntur qui debitis sunt fugit,
-                        adipisci
-                        quasi dicta voluptas! Recusandae.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Porro nobis nostrum error tempora natus quo ad soluta
-                        nemo
-                        ex nesciunt consequuntur qui debitis sunt fugit,
-                        adipisci
-                        quasi dicta voluptas! Recusandae.</p>
-                </section>
-            </div>
-            <script
-                src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <script src="assets/js/link-interno.js"></script>
-            <script src="assets/js/slideshow/slideshow.js"></script>
-        </body>
-    </html>
+            <section id="contato">
+                <h1>
+                    <img src="assets/img/icon-title.png" />
+                    <span>Fale Conosco</span>
+                </h1>
+                <div class="formulario">
+                    <form action="">
+                        <div class="col-6">
+                            <div class="form-input">
+                                <label for="nome">nome</label>
+                                <input type="text" id="nome">
+                            </div>
+
+                            <div class="form-input">
+                                <label for="email">Email</label>
+                                <input type="email" id="email">
+                            </div>
+
+                            <div class="form-input">
+                                <label for="sexo">Sexo</label>
+                                <input type="checkbox" id="sexo"
+                                    value="Feminino">
+                                <span>Feminino</span>
+                                <input type="checkbox" id="sexo"
+                                    value="Masculino">
+                                <span>Masculino</span>
+                            </div>
+
+                            <div class="parser-input">
+                                <div class="form-input-cidade">
+                                    <label for="cidade">Cidade</label>
+                                    <input type="text" id="cidade" />
+                                </div>
+
+                                <div class="form-input-estado">
+                                    <label for="estado">Estado</label>
+                                    <select id="estado">
+                                        <option value="volvo">SP</option>
+                                        <option value="saab">PR</option>
+                                        <option value="opel">MT</option>
+                                        <option value="audi">RJ</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="parser-input">
+                                <div class="form-input-ddd">
+                                    <label for="ddd">ddd</label>
+                                    <input type="text" id="ddd" />
+                                </div>
+                                <div class="form-input-telefone">
+                                    <label for="telefone">Telefone</label>
+                                    <input type="text" id="telefone" />
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-input-titulo">
+                                <label for="titulo">Título da mensagem</label>
+                                <input type="text" id="titulo">
+                            </div>
+                            <div class="form-input-mensgem">
+                                <label for="Mensagem">Mensagem</label>
+                                <textarea id="w3review" name="w3review"
+                                    rows="4" cols="50">
+                                </textarea>
+                            </div>
+                            <div class="form-buttons">
+                                <input type="reset" class="btn-limpar"
+                                    value="limpar">
+                                <button class="btn-enviar">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="assets/js/link-interno.js"></script>
+        <script src="assets/js/slideshow/slideshow.js"></script>
+    </body>
+</html>

@@ -19,6 +19,13 @@
   src: url("/assets/Fonts/Gotham/gotham-htf-medium.woff2") format("woff2"), url("/assets/Fonts/Gotham/gotham-htf-medium.woff") format("woff");
 }
 
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+
 body {
   color: #fff;
   padding-top: 50px;
@@ -36,8 +43,112 @@ header {
   z-index: 999999;
 }
 
+header .hambuguer {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  header .hambuguer {
+    display: block;
+  }
+  header .hambuguer .overlay {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100px;
+    background-color: #2d2e2f;
+    border-bottom: 1px solid #ed145b;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .hambuguer .overlay > label {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    top: 3px;
+    left: 200px;
+    width: 30px;
+    height: 16px;
+    border-top: 2px solid #ed145b;
+    border-bottom: 2px solid #ed145b;
+  }
+  header .hambuguer .overlay > label::before {
+    content: '';
+    display: block;
+    position: relative;
+    top: 7px;
+    border-top: 2px solid #ed145b;
+  }
+  header .hambuguer .verticalNav {
+    color: #333;
+    position: relative;
+    top: -55px;
+    height: 150px;
+    padding: 20px;
+    padding-left: 130px;
+    font-size: 22px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: #3c3c3c;
+    -webkit-transition: top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+    transition: top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  }
+  header .hambuguer .verticalNav a {
+    display: block;
+    color: cee7f5;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'gotham-htf-book';
+    color: #9aadb8;
+    font-size: 16px;
+    padding-top: 12px;
+    -webkit-transition: 0.9s all;
+    transition: 0.9s all;
+  }
+  header .hambuguer .verticalNav a:hover {
+    color: #fff;
+  }
+  header .hambuguer .puppies {
+    padding-bottom: 10px;
+    margin-left: 115px;
+    background-color: #fff;
+    margin-top: -30px;
+    -webkit-transition: margin-top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+    transition: margin-top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  }
+  header .hambuguer #toggle {
+    position: absolute;
+    visibility: hidden;
+  }
+  header .hambuguer #toggle:checked ~ .verticalNav {
+    top: 80px;
+  }
+  header .hambuguer #toggle:checked ~ .puppies {
+    margin-top: 135px;
+  }
+}
+
 header h1 {
   margin: 20px 140px 20px 20px;
+}
+
+@media (max-width: 1022px) {
+  header h1 {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  header .nav {
+    display: none;
+  }
 }
 
 header .content-header {
@@ -46,6 +157,12 @@ header .content-header {
   display: flex;
   max-width: 1024px;
   margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  header .content-header {
+    display: none;
+  }
 }
 
 header .content-header ul li {
@@ -62,6 +179,12 @@ header .content-header ul a {
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'gotham-htf-book';
+}
+
+@media (max-width: 950px) {
+  header .content-header ul a {
+    margin: 14px 0 0 0px;
+  }
 }
 
 header .content-header ul a:hover:after {
@@ -101,10 +224,10 @@ header .content-header .btn-login {
   text-transform: uppercase;
   margin-top: 17px;
   margin-left: 70px;
-  -webkit-transition: background-color .2s ease,-webkit-box-shadow .2s ease;
-  transition: background-color .2s ease,-webkit-box-shadow .2s ease;
-  transition: box-shadow .2s ease,background-color .2s ease;
-  transition: box-shadow .2s ease,background-color .2s ease,-webkit-box-shadow .2s ease;
+  -webkit-transition: background-color .2s ease, -webkit-box-shadow .2s ease;
+  transition: background-color .2s ease, -webkit-box-shadow .2s ease;
+  transition: box-shadow .2s ease, background-color .2s ease;
+  transition: box-shadow .2s ease, background-color .2s ease, -webkit-box-shadow .2s ease;
 }
 
 header .content-header .btn-login:hover {
@@ -133,6 +256,11 @@ header .content-header .btn-login:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.container .session-init img {
+  width: 100%;
+  max-width: 726px;
 }
 
 .container .session-init .arrow-conceito {
@@ -215,7 +343,7 @@ header .content-header .btn-login:hover {
 
 .container #noticias h1 {
   font-family: 'gotham-htf-medium';
-  font-size: 36px;
+  font-size: 42px;
   color: #91a3ad;
   text-transform: uppercase;
   margin-bottom: 150px;
@@ -223,5 +351,422 @@ header .content-header .btn-login:hover {
 
 .container #noticias h1 img {
   padding-right: 20px;
+}
+
+.container #noticias .conteiner-noticias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 380px;
+}
+
+.container #noticias .conteiner-noticias figure {
+  max-width: 310px;
+  margin-right: 35px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container #noticias .conteiner-noticias figure figcaption {
+  font-family: 'gotham-htf-medium';
+  font-size: 20px;
+  line-height: 30px;
+  color: #91a3ad;
+  margin-top: 22px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.container #noticias .conteiner-noticias figure span {
+  color: #586369;
+  font-size: 14px;
+  font-family: 'gotham-htf-medium';
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.container #noticias .conteiner-noticias figure small::after {
+  background: #ed145b;
+  content: "";
+  display: block;
+  height: 5px;
+  position: absolute;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  width: 68px;
+}
+
+.container #noticias .conteiner-noticias figure p {
+  color: #91a3ad;
+  font-family: 'Roboto';
+  font-weight: 400;
+  line-height: 21px;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.container #noticias .conteiner-noticias figure .leia-mais {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.container #noticias .conteiner-noticias figure .leia-mais .icon-leia-mais {
+  border: 1px solid #ed145b;
+  border-radius: 50%;
+  display: inline-block;
+  height: 40px;
+  margin-right: 15px;
+  position: relative;
+  -webkit-transition: background .4s ease;
+  transition: background .4s ease;
+  width: 40px;
+}
+
+.container #noticias .conteiner-noticias figure .leia-mais .icon-leia-mais:hover {
+  background: #ed145b;
+}
+
+.container #noticias .conteiner-noticias figure .leia-mais .icon-leia-mais:hover::after {
+  color: #ffffff;
+}
+
+.container #noticias .conteiner-noticias figure .leia-mais .icon-leia-mais::after {
+  color: #ed145b;
+  content: "+";
+  font: 35px Gotham HTF Light;
+  left: 50%;
+  position: absolute;
+  top: 48%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: color .4s ease;
+  transition: color .4s ease;
+}
+
+.container #contato {
+  margin-bottom: 40px;
+}
+
+.container #contato h1 {
+  font-family: 'gotham-htf-medium';
+  font-size: 42px;
+  color: #91a3ad;
+  text-transform: uppercase;
+  margin-bottom: 150px;
+}
+
+.container #contato h1 img {
+  padding-right: 20px;
+}
+
+.container #contato .formulario {
+  width: 100%;
+}
+
+.container #contato .formulario form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .container #contato .formulario form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.container #contato .formulario .form-input {
+  margin-bottom: 40px;
+}
+
+.container #contato .formulario .form-input label {
+  display: block;
+  font-family: 'gotham-htf-medium';
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #91a3ad;
+  padding: 10px 0 10px 10px;
+}
+
+.container #contato .formulario .form-input label:after {
+  content: "*";
+  color: #ed145b;
+  font-size: 16px;
+}
+
+.container #contato .formulario .form-input span {
+  font-family: 'Roboto';
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-right: 40px;
+  color: #91a3ad;
+}
+
+.container #contato .formulario .form-input input[type=text],
+.container #contato .formulario .form-input input[type=email] {
+  max-width: 434px;
+  width: 100%;
+  height: 45px;
+  border: 1px solid #91a3ad;
+  background: transparent;
+  padding-left: 10px;
+  color: #ffffff;
+}
+
+.container #contato .formulario .parser-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container #contato .formulario .parser-input .form-input-cidade {
+  margin-bottom: 40px;
+}
+
+.container #contato .formulario .parser-input .form-input-cidade label {
+  display: block;
+  font-family: 'gotham-htf-medium';
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #91a3ad;
+  padding: 10px 0 10px 10px;
+}
+
+.container #contato .formulario .parser-input .form-input-cidade label:after {
+  content: "*";
+  color: #ed145b;
+  font-size: 16px;
+}
+
+.container #contato .formulario .parser-input .form-input-cidade input[type=text] {
+  width: 318px;
+  height: 45px;
+  border: 1px solid #91a3ad;
+  background: transparent;
+  padding-left: 10px;
+  color: #ffffff;
+}
+
+.container #contato .formulario .parser-input .form-input-estado {
+  margin-left: 40px;
+}
+
+.container #contato .formulario .parser-input .form-input-estado label {
+  display: block;
+  font-family: 'gotham-htf-medium';
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #91a3ad;
+  padding: 10px 0 10px 10px;
+}
+
+.container #contato .formulario .parser-input .form-input-estado label:after {
+  content: "*";
+  color: #ed145b;
+  font-size: 16px;
+}
+
+.container #contato .formulario .parser-input .form-input-estado select {
+  max-width: 96px;
+  width: 100%;
+  height: 49px;
+  border: 1px solid #91a3ad;
+  background: transparent;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.container #contato .formulario .parser-input .form-input-estado select option {
+  color: #000000;
+}
+
+.container #contato .formulario .parser-input .form-input-ddd label {
+  display: block;
+  font-family: 'gotham-htf-medium';
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #91a3ad;
+  padding: 10px 0 10px 10px;
+}
+
+.container #contato .formulario .parser-input .form-input-ddd label:after {
+  content: "*";
+  color: #ed145b;
+  font-size: 16px;
+}
+
+.container #contato .formulario .parser-input .form-input-ddd input[type=text] {
+  width: 83px;
+  height: 45px;
+  border: 1px solid #91a3ad;
+  background: transparent;
+  padding-left: 10px;
+  color: #ffffff;
+}
+
+.container #contato .formulario .parser-input .form-input-telefone {
+  margin-left: 40px;
+}
+
+.container #contato .formulario .parser-input .form-input-telefone label {
+  display: block;
+  font-family: 'gotham-htf-medium';
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #91a3ad;
+  padding: 10px 0 10px 10px;
+}
+
+.container #contato .formulario .parser-input .form-input-telefone label:after {
+  content: "*";
+  color: #ed145b;
+  font-size: 16px;
+}
+
+.container #contato .formulario .parser-input .form-input-telefone input[type=text] {
+  width: 203px;
+  height: 45px;
+  border: 1px solid #91a3ad;
+  background: transparent;
+  padding-left: 10px;
+  color: #ffffff;
+}
+
+.container #contato .formulario .form-input-titulo {
+  margin-left: 50px;
+}
+
+.container #contato .formulario .form-input-titulo label {
+  display: block;
+  font-family: 'gotham-htf-medium';
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #91a3ad;
+  padding: 10px 0 10px 10px;
+}
+
+.container #contato .formulario .form-input-titulo label:after {
+  content: "*";
+  color: #ed145b;
+  font-size: 16px;
+}
+
+.container #contato .formulario .form-input-titulo input[type=text] {
+  width: 226px;
+  height: 45px;
+  border: 1px solid #91a3ad;
+  background: transparent;
+  padding-left: 10px;
+  color: #ffffff;
+}
+
+.container #contato .formulario .form-input-mensgem {
+  margin-left: 50px;
+}
+
+.container #contato .formulario .form-input-mensgem label {
+  display: block;
+  font-family: 'gotham-htf-medium';
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #91a3ad;
+  padding: 10px 0 10px 10px;
+}
+
+.container #contato .formulario .form-input-mensgem label:after {
+  content: "*";
+  color: #ed145b;
+  font-size: 16px;
+}
+
+.container #contato .formulario .form-input-mensgem textarea {
+  width: 475px;
+  height: 175px;
+  border: 1px solid #91a3ad;
+  background: transparent;
+  padding-left: 10px;
+  color: #ffffff;
+}
+
+.container #contato .formulario .form-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container #contato .formulario .form-buttons .btn-limpar {
+  width: 153px;
+  height: 38px;
+  border: 0;
+  background: transparent;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 13px;
+  font-family: 'gotham-htf-medium';
+  color: #ed145b;
+  border: 1px solid #ed145b;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 17px;
+  -webkit-transition: background-color .2s ease, -webkit-box-shadow .2s ease;
+  transition: background-color .2s ease, -webkit-box-shadow .2s ease;
+  transition: box-shadow .2s ease, background-color .2s ease;
+  transition: box-shadow .2s ease, background-color .2s ease, -webkit-box-shadow .2s ease;
+}
+
+.container #contato .formulario .form-buttons .btn-limpar:hover {
+  color: #fff;
+}
+
+.container #contato .formulario .form-buttons .btn-enviar {
+  width: 153px;
+  height: 38px;
+  border: 0;
+  background: #ed145b;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 13px;
+  font-family: 'gotham-htf-medium';
+  color: #000000;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 17px;
+  margin-left: 28px;
+  -webkit-transition: background-color .2s ease, -webkit-box-shadow .2s ease;
+  transition: background-color .2s ease, -webkit-box-shadow .2s ease;
+  transition: box-shadow .2s ease, background-color .2s ease;
+  transition: box-shadow .2s ease, background-color .2s ease, -webkit-box-shadow .2s ease;
+}
+
+.container #contato .formulario .form-buttons .btn-enviar:hover {
+  background-color: #ed145b;
+  -webkit-box-shadow: 0 0 20px #ed145b;
+          box-shadow: 0 0 20px #ed145b;
 }
 /*# sourceMappingURL=styles.css.map */

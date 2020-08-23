@@ -17,3 +17,13 @@ $('.session-init a[href^="#"]').on('click', function(e) {
 		scrollTop: targetOffset - 100
 	}, 500);
 });
+
+$('.verticalNav a[href^="#"]').on('click', function(e) {
+	e.preventDefault();
+	var id = $(this).attr('href'),
+			targetOffset = $(id).offset().top;
+			
+	$('html, body').animate({ 
+		scrollTop: targetOffset - 100
+	}, 500);
+});
