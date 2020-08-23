@@ -29,9 +29,9 @@ button:focus {
 body {
   color: #fff;
   padding-top: 50px;
-  background-image: url("../img/bg-fiap.png");
+  background-image: url("../img/bg-fiap.png"), url("../img/gradiente.jpg");
   background-color: #2d2e2f;
-  background-size: cover;
+  background-size: contain;
 }
 
 header {
@@ -41,6 +41,8 @@ header {
   position: fixed;
   top: 0;
   z-index: 999999;
+  background-image: url(../img/gradiente.jpg);
+  background-size: cover;
 }
 
 header .hambuguer {
@@ -79,6 +81,15 @@ header .hambuguer {
     border-top: 2px solid #ed145b;
     border-bottom: 2px solid #ed145b;
   }
+}
+
+@media (max-width: 900px) and (max-width: 560px) {
+  header .hambuguer .overlay > label {
+    left: 80px;
+  }
+}
+
+@media (max-width: 900px) {
   header .hambuguer .overlay > label::before {
     content: '';
     display: block;
@@ -92,7 +103,6 @@ header .hambuguer {
     top: -55px;
     height: 150px;
     padding: 20px;
-    padding-left: 130px;
     font-size: 22px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -360,11 +370,45 @@ header .content-header .btn-login:hover {
   margin-bottom: 380px;
 }
 
+@media (max-width: 1060px) {
+  .container #noticias .conteiner-noticias {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 765px) {
+  .container #noticias .conteiner-noticias {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .container #noticias .conteiner-noticias figure {
   max-width: 310px;
   margin-right: 35px;
   position: relative;
   overflow: hidden;
+}
+
+@media (max-width: 765px) {
+  .container #noticias .conteiner-noticias figure {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .container #noticias .conteiner-noticias figure figcaption {
@@ -375,6 +419,12 @@ header .content-header .btn-login:hover {
   margin-top: 22px;
   margin-bottom: 25px;
   text-transform: uppercase;
+}
+
+@media (max-width: 765px) {
+  .container #noticias .conteiner-noticias figure figcaption {
+    text-align: center;
+  }
 }
 
 .container #noticias .conteiner-noticias figure span {
@@ -458,6 +508,20 @@ header .content-header .btn-login:hover {
   margin-bottom: 150px;
 }
 
+@media (max-width: 1000px) {
+  .container #contato h1 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .container #contato h1 img {
   padding-right: 20px;
 }
@@ -473,7 +537,7 @@ header .content-header .btn-login:hover {
   width: 100%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .container #contato .formulario form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -484,6 +548,12 @@ header .content-header .btn-login:hover {
 
 .container #contato .formulario .form-input {
   margin-bottom: 40px;
+}
+
+@media (max-width: 1000px) {
+  .container #contato .formulario .form-input {
+    text-align: center;
+  }
 }
 
 .container #contato .formulario .form-input label {
@@ -520,10 +590,26 @@ header .content-header .btn-login:hover {
   color: #ffffff;
 }
 
+@media (max-width: 1000px) {
+  .container #contato .formulario .form-input input[type=text],
+  .container #contato .formulario .form-input input[type=email] {
+    max-width: 341px;
+    width: 100%;
+  }
+}
+
 .container #contato .formulario .parser-input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 1000px) {
+  .container #contato .formulario .parser-input {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .container #contato .formulario .parser-input .form-input-cidade {
@@ -552,6 +638,13 @@ header .content-header .btn-login:hover {
   background: transparent;
   padding-left: 10px;
   color: #ffffff;
+}
+
+@media (max-width: 1000px) {
+  .container #contato .formulario .parser-input .form-input-cidade input[type=text] {
+    max-width: 318px;
+    width: 100%;
+  }
 }
 
 .container #contato .formulario .parser-input .form-input-estado {
@@ -643,6 +736,22 @@ header .content-header .btn-login:hover {
   margin-left: 50px;
 }
 
+@media (max-width: 1000px) {
+  .container #contato .formulario .form-input-titulo {
+    margin-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .container #contato .formulario .form-input-titulo label {
   display: block;
   font-family: 'gotham-htf-medium';
@@ -667,8 +776,30 @@ header .content-header .btn-login:hover {
   color: #ffffff;
 }
 
+@media (max-width: 1000px) {
+  .container #contato .formulario .form-input-titulo input[type=text] {
+    width: 340px;
+  }
+}
+
 .container #contato .formulario .form-input-mensgem {
   margin-left: 50px;
+}
+
+@media (max-width: 1000px) {
+  .container #contato .formulario .form-input-mensgem {
+    margin-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .container #contato .formulario .form-input-mensgem label {
@@ -695,6 +826,13 @@ header .content-header .btn-login:hover {
   color: #ffffff;
 }
 
+@media (max-width: 1000px) {
+  .container #contato .formulario .form-input-mensgem textarea {
+    max-width: 341px;
+    width: 100%;
+  }
+}
+
 .container #contato .formulario .form-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -702,6 +840,17 @@ header .content-header .btn-login:hover {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+@media (max-width: 1000px) {
+  .container #contato .formulario .form-buttons {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .container #contato .formulario .form-buttons .btn-limpar {
@@ -768,5 +917,24 @@ header .content-header .btn-login:hover {
   background-color: #ed145b;
   -webkit-box-shadow: 0 0 20px #ed145b;
           box-shadow: 0 0 20px #ed145b;
+}
+
+@media (max-width: 716px) {
+  .prev,
+  .next {
+    top: 22% !important;
+  }
+}
+
+@media (max-width: 935px) {
+  .numbertext {
+    display: none;
+  }
+}
+
+@media (max-width: 935px) {
+  .mySlides img {
+    height: 272px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
