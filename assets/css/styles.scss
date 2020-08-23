@@ -49,7 +49,7 @@ header {
 
         @media (max-width: 900px) {
             display: block;
-
+            height: 101px;
 
             .overlay {
                 position: fixed;
@@ -61,6 +61,8 @@ header {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                background-image: url(../img/gradiente.jpg);
+                background-size: cover;
             }
 
             .overlay>label {
@@ -95,7 +97,7 @@ header {
                 padding: 20px;
                 font-size: 22px;
                 box-sizing: border-box;
-                background-color: #3c3c3c;
+                background-color: #272b2e;
                 transition: top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
             }
 
@@ -279,6 +281,10 @@ header {
             color: #cee7f5;
             margin-bottom: 70px;
 
+            @media (max-width: 480px) {
+                padding: 0 10px 0 10px;
+            }
+
             strong {
                 font-family: 'gotham-htf-bold';
             }
@@ -290,6 +296,10 @@ header {
             color: #cee7f5;
             text-align: center;
             line-height: 32px;
+
+            @media (max-width: 480px) {
+                padding: 0 10px 0 10px;
+            }
         }
 
         .join-us {
@@ -309,6 +319,10 @@ header {
             text-transform: uppercase;
             color: #91a3ad;
             margin-bottom: 110px;
+
+            @media (max-width: 480px) {
+                font-size: 30px;
+            }
 
             &:after {
                 background: #ed145b;
@@ -337,6 +351,11 @@ header {
             color: #91a3ad;
             text-transform: uppercase;
             margin-bottom: 150px;
+
+            
+            @media (max-width: 480px) {
+                font-size: 30px;
+            }
 
             img {
                 padding-right: 20px;
@@ -419,6 +438,10 @@ header {
                     display: flex;
                     margin-top: 20px;
 
+                    @media (max-width: 900px) {
+                        margin-bottom: 30px;
+                    }
+
                     .icon-leia-mais {
                         border: 1px solid #ed145b;
                         border-radius: 50%;
@@ -469,6 +492,10 @@ header {
                 justify-content: center;
                 display: flex;
                 align-items: center;
+            }
+
+            @media (max-width: 480px) {
+                font-size: 30px;
             }
 
             img {
@@ -536,6 +563,10 @@ header {
                         max-width: 341px;
                         width: 100%;
                     }
+
+                    @media (max-width: 350px) {
+                        max-width: 288px;
+                    }
                 }
             }
 
@@ -577,6 +608,9 @@ header {
                             width: 100%;
                         }
 
+                        @media (max-width: 350px) {
+                            max-width: 288px;
+                        }
                     }
 
                 }
@@ -637,6 +671,10 @@ header {
                         background: transparent;
                         padding-left: 10px;
                         color: #ffffff;
+
+                        @media (max-width: 350px) {
+                            max-width: 38px;
+                        }
                     }
                 }
 
@@ -705,6 +743,10 @@ header {
                     @media (max-width: 1000px) {
                         width: 340px;
                     }
+
+                    @media (max-width: 350px) {
+                        max-width: 288px;
+                    }
                 }
             }
 
@@ -745,6 +787,10 @@ header {
                         max-width: 341px;
                         width: 100%;
                     }
+
+                    @media (max-width: 350px) {
+                        max-width: 288px;
+                    }
                 }
             }
 
@@ -775,6 +821,10 @@ header {
                     margin-top: 17px;
                     transition: box-shadow .2s ease, background-color .2s ease;
 
+                    @media (max-width: 350px) {
+                        width: 120px;
+                    }
+
                     &:hover {
 
                         color: #fff;
@@ -799,6 +849,10 @@ header {
                     margin-left: 28px;
                     transition: box-shadow .2s ease, background-color .2s ease;
 
+                    @media (max-width: 350px) {
+                        width: 120px;
+                    }
+                    
                     &:hover {
                         background-color: #ed145b;
                         box-shadow: 0 0 20px #ed145b;
@@ -823,7 +877,7 @@ header {
 }
 
 .mySlides {
-    @media (max-width: 935px) {
+    @media (max-width: 507px) {
         img {
             height: 272px;
         }

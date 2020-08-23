@@ -52,6 +52,7 @@ header .hambuguer {
 @media (max-width: 900px) {
   header .hambuguer {
     display: block;
+    height: 101px;
   }
   header .hambuguer .overlay {
     position: fixed;
@@ -69,6 +70,8 @@ header .hambuguer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background-image: url(../img/gradiente.jpg);
+    background-size: cover;
   }
   header .hambuguer .overlay > label {
     cursor: pointer;
@@ -106,7 +109,7 @@ header .hambuguer {
     font-size: 22px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    background-color: #3c3c3c;
+    background-color: #272b2e;
     -webkit-transition: top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
     transition: top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
   }
@@ -303,6 +306,12 @@ header .content-header .btn-login:hover {
   margin-bottom: 70px;
 }
 
+@media (max-width: 480px) {
+  .container #conceito h1 {
+    padding: 0 10px 0 10px;
+  }
+}
+
 .container #conceito h1 strong {
   font-family: 'gotham-htf-bold';
 }
@@ -313,6 +322,12 @@ header .content-header .btn-login:hover {
   color: #cee7f5;
   text-align: center;
   line-height: 32px;
+}
+
+@media (max-width: 480px) {
+  .container #conceito p {
+    padding: 0 10px 0 10px;
+  }
 }
 
 .container #conceito .join-us {
@@ -332,6 +347,12 @@ header .content-header .btn-login:hover {
   text-transform: uppercase;
   color: #91a3ad;
   margin-bottom: 110px;
+}
+
+@media (max-width: 480px) {
+  .container #fotos h1 {
+    font-size: 30px;
+  }
 }
 
 .container #fotos h1:after {
@@ -357,6 +378,12 @@ header .content-header .btn-login:hover {
   color: #91a3ad;
   text-transform: uppercase;
   margin-bottom: 150px;
+}
+
+@media (max-width: 480px) {
+  .container #noticias h1 {
+    font-size: 30px;
+  }
 }
 
 .container #noticias h1 img {
@@ -463,6 +490,12 @@ header .content-header .btn-login:hover {
   margin-top: 20px;
 }
 
+@media (max-width: 900px) {
+  .container #noticias .conteiner-noticias figure .leia-mais {
+    margin-bottom: 30px;
+  }
+}
+
 .container #noticias .conteiner-noticias figure .leia-mais .icon-leia-mais {
   border: 1px solid #ed145b;
   border-radius: 50%;
@@ -519,6 +552,12 @@ header .content-header .btn-login:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container #contato h1 {
+    font-size: 30px;
   }
 }
 
@@ -598,6 +637,13 @@ header .content-header .btn-login:hover {
   }
 }
 
+@media (max-width: 350px) {
+  .container #contato .formulario .form-input input[type=text],
+  .container #contato .formulario .form-input input[type=email] {
+    max-width: 288px;
+  }
+}
+
 .container #contato .formulario .parser-input {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -644,6 +690,12 @@ header .content-header .btn-login:hover {
   .container #contato .formulario .parser-input .form-input-cidade input[type=text] {
     max-width: 318px;
     width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .container #contato .formulario .parser-input .form-input-cidade input[type=text] {
+    max-width: 288px;
   }
 }
 
@@ -702,6 +754,12 @@ header .content-header .btn-login:hover {
   background: transparent;
   padding-left: 10px;
   color: #ffffff;
+}
+
+@media (max-width: 350px) {
+  .container #contato .formulario .parser-input .form-input-ddd input[type=text] {
+    max-width: 38px;
+  }
 }
 
 .container #contato .formulario .parser-input .form-input-telefone {
@@ -782,6 +840,12 @@ header .content-header .btn-login:hover {
   }
 }
 
+@media (max-width: 350px) {
+  .container #contato .formulario .form-input-titulo input[type=text] {
+    max-width: 288px;
+  }
+}
+
 .container #contato .formulario .form-input-mensgem {
   margin-left: 50px;
 }
@@ -833,6 +897,12 @@ header .content-header .btn-login:hover {
   }
 }
 
+@media (max-width: 350px) {
+  .container #contato .formulario .form-input-mensgem textarea {
+    max-width: 288px;
+  }
+}
+
 .container #contato .formulario .form-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -881,6 +951,12 @@ header .content-header .btn-login:hover {
   transition: box-shadow .2s ease, background-color .2s ease, -webkit-box-shadow .2s ease;
 }
 
+@media (max-width: 350px) {
+  .container #contato .formulario .form-buttons .btn-limpar {
+    width: 120px;
+  }
+}
+
 .container #contato .formulario .form-buttons .btn-limpar:hover {
   color: #fff;
 }
@@ -913,6 +989,12 @@ header .content-header .btn-login:hover {
   transition: box-shadow .2s ease, background-color .2s ease, -webkit-box-shadow .2s ease;
 }
 
+@media (max-width: 350px) {
+  .container #contato .formulario .form-buttons .btn-enviar {
+    width: 120px;
+  }
+}
+
 .container #contato .formulario .form-buttons .btn-enviar:hover {
   background-color: #ed145b;
   -webkit-box-shadow: 0 0 20px #ed145b;
@@ -932,7 +1014,7 @@ header .content-header .btn-login:hover {
   }
 }
 
-@media (max-width: 935px) {
+@media (max-width: 507px) {
   .mySlides img {
     height: 272px;
   }
