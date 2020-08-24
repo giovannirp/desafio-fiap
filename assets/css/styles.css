@@ -1,22 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900");
 @font-face {
   font-family: 'gotham-htf-bold';
-  src: url("/assets/Fonts/Gotham/gotham-htf-bold.woff2") format("woff2"), url("/assets/Fonts/Gotham/gotham-htf-bold.woff") format("woff");
+  src: url("../fonts/gotham/gotham-htf-bold.woff") format("woff2"), url("../fonts/gotham/gotham-htf-bold.woff") format("woff");
 }
 
 @font-face {
   font-family: 'gotham-htf-book';
-  src: url("/assets/Fonts/Gotham/gotham-htf-book.woff2") format("woff2"), url("/assets/Fonts/Gotham/gotham-htf-book.woff") format("woff");
+  src: url("../fonts/gotham/gotham-htf-book.woff2") format("woff2"), url("../fonts/gotham/gotham-htf-book.woff") format("woff");
 }
 
 @font-face {
   font-family: 'gotham-htf-light';
-  src: url("/assets/Fonts/Gotham/gotham-htf-light.woff2") format("woff2"), url("/assets/Fonts/Gotham/gotham-htf-light.woff") format("woff");
+  src: url("../fonts/gotham/gotham-htf-light.woff2") format("woff2"), url("../fonts/gotham/gotham-htf-light.woff") format("woff");
 }
 
 @font-face {
   font-family: 'gotham-htf-medium';
-  src: url("/assets/Fonts/Gotham/gotham-htf-medium.woff2") format("woff2"), url("/assets/Fonts/Gotham/gotham-htf-medium.woff") format("woff");
+  src: url("../fonts/gotham/gotham-htf-medium.woff2") format("woff2"), url("../fonts/gotham/gotham-htf-medium.woff") format("woff");
 }
 
 input:focus,
